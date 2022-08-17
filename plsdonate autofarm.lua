@@ -139,7 +139,7 @@ function update()
     else
         --Booth text when under 1000 robux raised
         text = tostring(getgenv().settings.goalBox)
-        boothText = tostring('<font color="'.. getgenv().settings.hexBox.. '">Help me start up! GOAL: ' .. Raised.Value .. " / " .. text .. "</font>")
+        boothText = tostring('<font color="'.. getgenv().settings.hexBox.. '">Buy so-called "stuff" here! Anything helps! <font color=" #00FF00 "> GOAL: ' .. Raised.Value .. " / " .. text .. "</font>")
     end
     --Updates the booth text
     require(game.ReplicatedStorage.Remotes).Event("SetBoothText"):FireServer(boothText, "booth")
