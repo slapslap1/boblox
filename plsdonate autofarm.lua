@@ -139,7 +139,7 @@ function update()
     else
         --Booth text when under 1000 robux raised
         text = tostring(getgenv().settings.goalBox)
-        boothText = tostring('<font color="'.. getgenv().settings.hexBox.. '">Buy random things here! Anything helps! </font> <font color="#00FF00"> GOAL: ' .. Raised.Value .. " / " .. text .. "</font>")
+            boothText = tostring('<font face="Arcade"><font color="#FF0000">Thanks</font> <font color="#FF8000">for</font> <font color="#FFFF00">donating!</font> <font color="#007940">Next</font> <font color="#4040FF">goal!</font><font color="#00FF00"> GOAL: ' .. Raised.Value .. " / " .. text .. "</font></font>")
         print(boothText)
     end
     --Updates the booth text
